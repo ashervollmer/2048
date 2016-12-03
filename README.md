@@ -1,2 +1,2 @@
-# Aarex2048
-[Play it here!](http://aarextiaokhiao.github.io/Aarex2048/)
+# Threes
+[Play it here!](http://asherv.com/threes/)
