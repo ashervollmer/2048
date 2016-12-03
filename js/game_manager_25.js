@@ -7,6 +7,7 @@ function GameManager(size, InputManager, Actuator, StorageManager, easy) {
 
   this.startTiles     = 2;
   this.maxStartingTile = 1;
+  
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -70,8 +71,8 @@ GameManager.prototype.addStartTiles = function () {
 
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
-  if (this.grid.cellsAvailable()) {
-    var tile = new Tile(this.grid.randomAvailableCell(), Math.ceil(Math.random() * 1);
+  if (this.grid.cellsAvailable())
+    var tile = new Tile(this.grid.randomAvailableCell(), Math.ceil(Math.random() * 5);
     this.grid.insertTile(tile);
   }
 };
@@ -174,7 +175,7 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === Goal) self.won = true;
+          if (merged.value === 25) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
