@@ -173,7 +173,7 @@ GameManager.prototype.move = function (direction) {
           // Update the score
           self.score += merged.value;
 
-          // Don't make 128 tile
+          // Don't make 32 tile
           if (merged.value === Goal) self.over = true;
         } else {
           self.moveTile(tile, positions.farthest);
