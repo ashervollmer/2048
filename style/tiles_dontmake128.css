@@ -1,13 +1,13 @@
   .tile.tile-2 .tile-inner {
     background: #ffffff; }
   .tile.tile-4 .tile-inner {
-    background: #ffafaf; }
+    background: #bfbfff; }
   .tile.tile-8 .tile-inner {
-    background: #ff5f5f; }
+    background: #ff0f0f; }
   .tile.tile-16 .tile-inner {
-    background: #ff0000; }
+    background: #000000; }
   .tile.tile-32 .tile-inner {
-    background: #af0000; }
+    background: #5c4321; }
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
     background: #5f0000; }
